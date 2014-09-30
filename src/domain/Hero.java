@@ -3,10 +3,20 @@ package domain;
 public class Hero {
 
 	private String Name;
+	private String Profession;
+
 	private int HP;
 	private int MP;
 	private int EXP;
 	
+	private Inventory inventory;
+	
+	public Inventory getInventory() {
+		return inventory;
+	}
+	public void setInventory(Inventory inventory) {
+		this.inventory = inventory;
+	}
 	public String getName() {
 		return Name;
 	}
@@ -31,7 +41,14 @@ public class Hero {
 	public void setEXP(int eXP) {
 		EXP = eXP;
 	}
+	public String getProfession() {
+		return Profession;
+	}
+	public void setProfession(String profession) {
+		Profession = profession;
+	}
 	
+
 	
 
 }
