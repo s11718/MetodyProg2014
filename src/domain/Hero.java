@@ -2,9 +2,36 @@ package domain;
 
 public class Hero {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	private String Name;
+	private int HP;
+	private int MP;
+	private int EXP;
+	
+	public String getName() {
+		return Name;
 	}
+	public void setName(String name) {
+		Name = name;
+	}
+	public int getHP() {
+		return HP;
+	}
+	public void setHP(int hP) {
+		HP = hP;
+	}
+	public int getMP() {
+		return MP;
+	}
+	public void setMP(int mP) {
+		MP = mP;
+	}
+	public int getEXP() {
+		return EXP;
+	}
+	public void setEXP(int eXP) {
+		EXP = eXP;
+	}
+	
+	
 
 }
