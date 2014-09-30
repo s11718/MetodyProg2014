@@ -9,14 +9,7 @@ public class Hero {
 	private int MP;
 	private int EXP;
 	
-	private Inventory inventory;
 	
-	public Inventory getInventory() {
-		return inventory;
-	}
-	public void setInventory(Inventory inventory) {
-		this.inventory = inventory;
-	}
 	public String getName() {
 		return Name;
 	}

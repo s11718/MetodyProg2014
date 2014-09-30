@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Inventory {
 
-	Inventory (){
+	public Inventory (){
 		this.items=new ArrayList<Items>();
 	}
 	
