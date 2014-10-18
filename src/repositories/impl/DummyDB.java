@@ -11,5 +11,6 @@ public class DummyDB {
 	List<Hero> heroes = new ArrayList<Hero>();
 	List<Skill> skills = new ArrayList<Skill>();
 	List<Items> items = new ArrayList<Items>();
+	List<Profession> professions = new ArrayList<Profession>();
 	
 }

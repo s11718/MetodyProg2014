@@ -1,22 +1,36 @@
 package domain;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+
 
 public class Profession extends Entity {
 
 	public Profession (){
 		this.skill=new ArrayList<Skill>();
+		this.heroes=new ArrayList<Hero>();
+	
 	}
 	
 	private String name;
 	private int minLvl;
 
+	private List<Hero> heroes;
 	private List<Skill> skill;
 
 	public String getName() {
 		return name;
 	}
+
+	
+	public List<Hero> getHeroes() {
+		return heroes;
+	}
+
+
+	public void setHeroes(List<Hero> heroes) {
+		this.heroes = heroes;
+	}
+
 
 	public void setName(String name) {
 		this.name = name;

@@ -5,42 +5,43 @@ import java.util.List;
 import domain.Items;
 import repositories.IRepository;
 
-public class DummyItemsRepository implements IRepository {
+public class DummyItemsRepository implements IRepository<Items> {
 
 	private DummyDB db;
 
+	public DummyItemsRepository(DummyDB db) {
+		super();
+		this.db = db;
+	}
+
 	@Override
-	public void save(Object entity) {
+	public void save(Items entity) {
+		db.items.add(entity);
+	}
+
+	@Override
+	public void update(Items entity) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void update(Object entity) {
-		// TODO Auto-generated method stub
-		
+	public void delete(Items entity) {
+		db.items.add(entity);
 	}
 
 	@Override
-	public void delete(Object entity) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public Object get(int id) {
-		// TODO Auto-generated method stub
+	public Items get(int id) {
+		for(Items p: db.items)
+			if(p.getId()==id)
+				return p;
 		return null;
 	}
 
 	@Override
-	public List getAll() {
-		// TODO Auto-generated method stub
-		return null;
+	public List<Items> getAll() {
+		return db.items;
 	}
-
-
-
-
+	
 	
 }
