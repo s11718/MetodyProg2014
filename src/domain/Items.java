@@ -1,5 +1,8 @@
 package domain;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Items extends Entity {
 
 	private float value;
@@ -8,6 +11,20 @@ public class Items extends Entity {
 	private int durability;
 	private String effect;
 	
+	public Items(){
+		items=new ArrayList<Items>();
+	}
+	
+	private List<Items> items;
+	
+	
+	
+	public List<Items> getItems() {
+		return items;
+	}
+	public void setItems(List<Items> items) {
+		this.items = items;
+	}
 	public String getEffect() {
 		return effect;
 	}

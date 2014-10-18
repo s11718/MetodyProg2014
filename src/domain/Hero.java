@@ -1,5 +1,7 @@
 package domain;
 
+import java.util.*;
+
 public class Hero extends Entity {
 
 	private String Name;
@@ -9,7 +11,46 @@ public class Hero extends Entity {
 	private int MP;
 	private int EXP;
 	
+	private List<Items> items;
+	private List<Skill> skills;
 	
+	public Hero(){
+		items=new ArrayList<Items>();
+		skills=new ArrayList<Skill>();
+		
+}
+
+	
+	
+	
+	public List<Items> getItems() {
+		return items;
+	}
+
+
+
+
+	public void setItems(List<Items> items) {
+		this.items = items;
+	}
+
+
+
+
+	public List<Skill> getSkills() {
+		return skills;
+	}
+
+
+
+
+	public void setSkills(List<Skill> skills) {
+		this.skills = skills;
+	}
+
+
+
+
 	public String getName() {
 		return Name;
 	}
