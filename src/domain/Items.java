@@ -1,6 +1,6 @@
 package domain;
 
-public class Items {
+public class Items extends Entity {
 
 	private float value;
 	private int amount;

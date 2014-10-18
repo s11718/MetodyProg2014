@@ -1,6 +1,6 @@
 package domain;
 
-public class Hero {
+public class Hero extends Entity {
 
 	private String Name;
 	private String Profession;

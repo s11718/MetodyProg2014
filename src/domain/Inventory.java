@@ -3,7 +3,7 @@ package domain;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Inventory {
+public class Inventory extends Entity {
 
 	public Inventory (){
 		this.items=new ArrayList<Items>();
@@ -11,6 +11,9 @@ public class Inventory {
 	
 	private int capacity;
 	private String category;
+	
+	private List<Items> items;
+	
 	
 	public int getCapacity() {
 		return capacity;
@@ -36,7 +39,6 @@ public class Inventory {
 		this.items = items;
 	}
 
-	private List<Items> items;
 	
 	
 	
