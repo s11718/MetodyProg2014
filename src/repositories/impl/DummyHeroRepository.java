@@ -14,25 +14,24 @@ public class DummyHeroRepository implements IHeroRepository{
 	private DummyDB db;
 	
 	public DummyHeroRepository(DummyDB db) {
-		super();
 		this.db = db;
 	}
 
 	@Override
 	public void save(Hero entity) {
-		// TODO Auto-generated method stub
+		db.heroes.add(entity);
 		
 	}
 
 	@Override
 	public void update(Hero entity) {
-		// TODO Auto-generated method stub
+		
 		
 	}
 
 	@Override
 	public void delete(Hero entity) {
-		// TODO Auto-generated method stub
+		db.heroes.remove(entity);
 		
 	}
 

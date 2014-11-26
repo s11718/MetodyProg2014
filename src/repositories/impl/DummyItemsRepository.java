@@ -10,7 +10,7 @@ public class DummyItemsRepository implements IRepository<Items> {
 	private DummyDB db;
 
 	public DummyItemsRepository(DummyDB db) {
-		super();
+	
 		this.db = db;
 	}
 
@@ -27,7 +27,7 @@ public class DummyItemsRepository implements IRepository<Items> {
 
 	@Override
 	public void delete(Items entity) {
-		db.items.add(entity);
+		db.items.remove(entity);
 	}
 
 	@Override
