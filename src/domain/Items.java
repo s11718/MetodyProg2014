@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Items extends Entity {
 
+	private String Name;
 	private float value;
 	private int amount;
 	private String type;
@@ -55,6 +56,13 @@ public class Items extends Entity {
 	public void setDurability(int durability) {
 		this.durability = durability;
 	}
+	public String getName() {
+		return Name;
+	}
+	public void setName(String name) {
+		Name = name;
+	}
+	
 	
 	
 }

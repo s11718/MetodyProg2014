@@ -5,6 +5,7 @@ import java.sql.Statement;
 import java.util.List;
 
 import repositories.IRepository;
+import repositories.impl.HeroBuilder;
 import repositories.impl.HeroRepository;
 import domain.*;
 
@@ -39,7 +40,7 @@ public class Main {
 		Statement createTable = connection.createStatement();
 		createTable.executeUpdate(createTableSql);
 		
-		IRepository<Hero> heroes = new HeroRepository(connection);
+		IRepository<Hero> heroes = new HeroRepository(connection, new HeroBuilder());
 		heroes.save(Drizzt);
 		List<Hero> heroesFromDb= heroes.getAll();
 		

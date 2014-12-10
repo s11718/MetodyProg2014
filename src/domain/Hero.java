@@ -15,42 +15,23 @@ public class Hero extends Entity {
 	private List<Skill> skills;
 	
 	public Hero(){
+		
 		items=new ArrayList<Items>();
 		skills=new ArrayList<Skill>();
 		
-}
-
-	
-	
-	
+}	
 	public List<Items> getItems() {
 		return items;
 	}
-
-
-
-
 	public void setItems(List<Items> items) {
 		this.items = items;
 	}
-
-
-
-
 	public List<Skill> getSkills() {
 		return skills;
 	}
-
-
-
-
 	public void setSkills(List<Skill> skills) {
 		this.skills = skills;
 	}
-
-
-
-
 	public String getName() {
 		return Name;
 	}
