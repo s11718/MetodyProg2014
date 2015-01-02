@@ -1,9 +1,9 @@
 package repositories;
 
-import domain.Items;
+import domain.*;
 
 public interface IRepositoryServer {
 
-	public IHeroRepository getHero();
+	public IHeroRepository getHeroes();
 	public IRepository<Items> getItems();
 }

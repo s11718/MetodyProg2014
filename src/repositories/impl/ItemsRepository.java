@@ -9,12 +9,13 @@ import java.util.List;
 
 import domain.Items;
 import repositories.IRepository;
+import unitofwork.IUnitOfWork;
 
 public class ItemsRepository extends Repository<Items>{
 
 	protected ItemsRepository(Connection connection,
-			IEntityBuilder<Items> builder) {
-		super(connection, builder);
+			IEntityBuilder<Items> builder, IUnitOfWork uow) {
+		super(connection, builder, uow);
 	}
 
 	@Override

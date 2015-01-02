@@ -15,7 +15,7 @@ public class Hero extends Entity {
 	private List<Skill> skills;
 	
 	public Hero(){
-		
+		super();
 		items=new ArrayList<Items>();
 		skills=new ArrayList<Skill>();
 		

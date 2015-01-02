@@ -10,7 +10,7 @@ public class DummyRepositoryServer implements IRepositoryServer{
 	private DummyDB db = new DummyDB();
 
 	@Override
-	public IHeroRepository getHero() {
+	public IHeroRepository getHeroes() {
 		return new DummyHeroRepository(db);
 	}
 
